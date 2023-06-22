@@ -1,0 +1,122 @@
+.mask{
+          width: 100%;
+          height: 100vh;
+          position: relative;
+}
+
+.into-img{
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position: center;
+          object-fit: cover;
+}
+
+.mask::after{
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top:0;
+          left:0;
+          background-color: #fff;
+          opacity: 0.8;
+}
+
+.button .btn{
+padding: 21.2px 42.75px 22.4994px 45px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color:#5335D9;
+  color: #eee;
+  font-weight: 600;
+  cursor:pointer;
+  border: #fff 1px solid;
+  width: 376.45px;
+height: 63.98px;
+border-radius: 50px;
+          
+}
+
+
+
+.button{
+  margin-top: 1.5rem;
+}
+ 
+.btn-light{
+  background: transparent;
+  color: #fff;
+} 
+
+.btn:hover{
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+  transition: 0.3s;
+} 
+
+.hero{
+          height: 1000%;
+          width:100%;
+}
+
+.hero .content {
+          position:  absolute;
+          transform: translate(-50%,-50%);
+          top:50%;
+          left:50%;
+          text-align: center;
+}
+
+.hero .content h1{         
+          font-size: 4rem;
+          padding: 0.6rem,0 1.5rem;
+          margin-bottom: 2.2rem;
+          color: #fff;
+}
+.hero .content h1::before{
+          content: attr(data-text);
+          position: absolute;
+          color: #0A2647;
+          width: 350px;
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 4px solid #0A2647;
+          animation: animate 5s linear infinite;
+          /* filter: drop-shadow(0 0 20px #0A2647); */
+}
+
+@keyframes animate{
+          0%,10%,100%{
+                    width: 0;
+          }
+          70%,90%{
+                    width: 90%;
+          }
+}
+
+.hero .content p{
+          font-size: 1.4rem;
+          font-weight: 150px;
+          text-transform: uppercase;
+          margin-bottom: 3.2rem;
+}
+
+.content .btn{
+          margin: 1rem 0.2rem;}
+
+
+@media screen and (max-width:640px) {
+  .hero .content{
+    font-size: 2rem;
+  }
+
+  .hero .content p{
+          display: none;
+    font-size: 1.4rem  
+}
+
+.hero .content h1{
+          font-size: 2.5rem;
+}
+}

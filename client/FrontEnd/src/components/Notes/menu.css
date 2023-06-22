@@ -1,0 +1,38 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+
+.box-menu{
+	position: absolute;
+	left: 1440px;
+	top: 50px;
+	cursor: pointer;
+	background: #ededed;
+	width: 50px;
+	height: 40px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+	border-radius: 60px;
+	transition:height .4s;
+}
+.full-menu{height: 400px;}
+.wrapper1{
+	position: relative;
+	width: 60px;
+	height: 60px;
+}
+
+.hamburger1{
+          margin-left: 0.9rem;
+          padding-top: 0.5rem;
+}
+
+.box-menu.active{
+          height: 280px;
+}
+
+.menu-item {
+	margin-left: 2px;
+	background: #ededed;
+}
+
+.menu-item li{
+	padding: 1rem;
+}

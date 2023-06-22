@@ -1,0 +1,17 @@
+.main{
+   height: 50%;
+   margin: auto;
+   width: 104.5%;
+ 
+
+}
+.bgImage
+{
+    width: 100.4%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation-duration: 500s;
+    background-repeat: no-repeat;
+
+}

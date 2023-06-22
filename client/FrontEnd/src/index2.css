@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h4,p,a{
+  color:#0A2647;
+  text-decoration: none;
+}
+
+h2{
+color:#3F497F;
+}
+
+ul{
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  font-family:'Poppins',
+    sans-serif;
+  background-color: #fff; 
+ 
+
+}
+
+/* .btn{
+  padding: 12px,32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color:#FAD6A5;
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor:pointer;
+}
+.btn-light{
+  background: transparent;
+  color: #fff;
+}
+.btn:hover{
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+  transition: 0.3s;
+} */
+
+.dark-mode{
+  background-color: rgb(28, 27, 33);
+}
+
+.dark-mode h1{
+  color:white;
+}
+
+.container{
+  width: 850px;
+  margin-right:auto;
+  margin-left: auto;
+  min-height: 95vh;
+  margin-top: 10px;
+ overflow-y: scroll; 
+height:200px;
+background-color: white;
+
+}
+
+strong{
+  color:rgb(93, 89, 89);
+  font-size: medium;
+
+}
+
+.notes-list{
+  display: grid;
+  grid-gap:1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+ .note.new{
+  background-color: #FFF4D2;
+ }
+
+ textarea{
+  border:none;
+  resize: none;
+  background-color: #fff4d2;
+  font-size: 1.8rem;
+ }
+
+ textarea:focus{
+  outline: none;
+ }
+
+ .save{
+  background-color: #e1e1e1;
+  border-radius: 15px;
+  border:none;
+  height: 45px;
+  width:65px;
+  padding: 5px ,10px,5px,10px;
+ }
+
+ .save:hover{
+  background-color: #ededed;
+  cursor: pointer;
+ }
+
+.note{
+  background-color: #ededed;;
+  padding:1rem;
+  min-height:80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  font-size: 1.2rem;
+  font-weight: 600;
+border-block-start:5px solid #222;
+border-radius:10px;
+}
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.notes-container{
+   max-width: 800px;
+   margin:auto;
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-gap:40px;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+.left{         
+	    height:100%;
+          max-width:100%;
+          display:flex;
+          flex-direction: column;
+          padding: 1rem;
+}
+
+.right{
+          height: 100%;
+    max-width: 100%;
+   display: flex;
+ flex-direction: column;
+
+}
+
+.star{
+  display: flex;
+  margin-left: 80px;
+}
+.edit{
+  display: flex;
+
+}
+
+.notes-head{
+display:flex;
+margin-bottom:1.5rem;
+}
+
+.notes-head1{
+display:;
+}
